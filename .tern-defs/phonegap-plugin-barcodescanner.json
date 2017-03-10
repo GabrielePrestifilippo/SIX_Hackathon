@@ -1,0 +1,43 @@
+{
+    "!name": "phonegap-plugin-barcodescanner",
+    "!define": {
+        "!modules": {
+            "BarcodeScanner": {
+                "Encode": {
+                    "TEXT_TYPE": "string",
+                    "EMAIL_TYPE": "string",
+                    "PHONE_TYPE": "string",
+                    "SMS_TYPE": "string"
+                },
+                "format": {
+                    "all_1D": "number",
+                    "aztec": "number",
+                    "codabar": "number",
+                    "code_128": "number",
+                    "code_39": "number",
+                    "code_93": "number",
+                    "data_MATRIX": "number",
+                    "ean_13": "number",
+                    "ean_8": "number",
+                    "itf": "number",
+                    "maxicode": "number",
+                    "msi": "number",
+                    "pdf_417": "number",
+                    "plessey": "number",
+                    "qr_CODE": "number",
+                    "rss_14": "number",
+                    "rss_EXPANDED": "number",
+                    "upc_A": "number",
+                    "upc_E": "number",
+                    "upc_EAN_EXTENSION": "number"
+                }
+            }
+        }
+    },
+    "!plugin-version": "4.1.0",
+    "cordova": {
+        "plugins": {
+            "barcodeScanner": "!modules.BarcodeScanner"
+        }
+    }
+}
