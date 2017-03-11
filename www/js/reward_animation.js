@@ -1,5 +1,6 @@
 function startWin() {
     'use strict';
+    $("#win").show();
     var initialTime = 0;
     var score = 0;
     var reward_amount = 100;
@@ -69,6 +70,7 @@ function startWin() {
         if (initialTime > 200) {
             this.destroy();
             $("#win").html("");
+            $("#win").hide();
         }
 
 
