@@ -61,7 +61,7 @@ document.addEventListener("show", function (event) {
 //Data
         var d = [
             [
-                {axis: "Casual Clothing", value: 0.59},
+                {axis: "Casual Clothing", value: 0.25},
                 {axis: "Sport Clothing", value: 0.56},
                 {axis: "Business Clothing", value: 0.42},
                 {axis: "Electronics", value: 0.34},
