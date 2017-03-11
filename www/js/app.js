@@ -10,6 +10,11 @@ document.addEventListener('init', function (event) {
     }
 
 
+
+    $("#share").click(function () {
+        window.plugins.socialsharing.share('Message only')
+    });
+
     $("#secret").click(function () {
         var modal = $('#modal');
         modal.show();
