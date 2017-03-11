@@ -30,6 +30,7 @@ function successShare() {
 
     $("#modal2").click(function () {
         this.hide();
+        $('#rewardPage').click();
     });
 }
 
