@@ -49,8 +49,8 @@ function draw_spider_chart() {
         var d = [
             [
                 {axis: "Casual Clothing", value: 0.25},
-                {axis: "Sport Clothing", value: 0.56},
-                {axis: "Business Clothing", value: 0.42},
+                {axis: "Business Clothing", value: 0.56},
+                {axis: "Sport Equipment", value: 0.42},
                 {axis: "Electronics", value: 0.34},
                 {axis: "Groceries", value: 0.48},
                 {axis: "Coffee, Bakery", value: 0.14}
