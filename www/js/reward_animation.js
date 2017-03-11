@@ -1,9 +1,9 @@
-function startWin() {
+function startWin(amount) {
     'use strict';
     $("#win").show();
     var initialTime = 0;
     var score = 16;
-    var reward_amount = 70;
+    var reward_amount = amount;
     // create a Scene
     var winDiv = document.getElementById("win");
     var scn = new DivSugar.Scene().setSize(800, 600).setImage('images/win.jpg').appendTo(winDiv);

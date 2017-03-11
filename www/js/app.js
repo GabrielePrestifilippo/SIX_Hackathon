@@ -9,21 +9,29 @@ document.addEventListener('init', function (event) {
         myApp.controllers[page.id](page);
     }
 
-
-    $("#share").click(function () {
-        window.plugins.socialsharing.share('yoooo')
-    });
-
     $("#secret").click(function () {
         var modal = $('#modal');
         modal.show();
 
         modal.click(function () {
             this.hide();
-        })
+        });
     });
 
 });
+
+function successShare() {
+    startWin(30);
+
+    setTimeout(function () {
+        $(" #modal2").show();
+    }, 2500);
+
+
+    $("#modal2").click(function () {
+        this.hide();
+    });
+}
 
 
 function draw_spider_chart() {
@@ -137,8 +145,8 @@ document.addEventListener("show", function (event) {
         L.marker([47.3721001, 8.5382902]).addTo(mymap);
 
         var polygon = L.circle([47.3721001, 8.5382902], {
-            color: 'red',
-            fillColor: '#f03',
+            color: '#73dc85',
+            fillColor: '#73dc85',
             fillOpacity: 0.3,
             radius: 180,
         }).addTo(mymap);
@@ -169,13 +177,16 @@ document.addEventListener("show", function (event) {
         if (typeof cordova !== 'undefined') {
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
-                    startWin();
+                    startWin(70);
+                    setTimeout(function () {
+                        $("#outfit").show();
+                    }, 1200);
                 },
                 function (error) {
-                    startWin();
-                    setTimeout(function(){
+                    startWin(70);
+                    setTimeout(function () {
                         $("#outfit").show();
-                    },6000);
+                    }, 1200);
                 },
                 {
                     preferFrontCamera: false, // iOS and Android

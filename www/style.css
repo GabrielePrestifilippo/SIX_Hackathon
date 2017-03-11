@@ -234,7 +234,7 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     height: 70%;
 }
 
-#rewardSecret {
+#rewardSecret,#rewardSecret {
     font-size: 28px;
     font-weight: bold;
     color: #a4fdff;
