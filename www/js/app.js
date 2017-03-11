@@ -10,8 +10,12 @@ document.addEventListener('init', function (event) {
     }
 
     $("#secret").click(function(){
-        var modal = document.getElementById('modal');
+        var modal = $('#modal');
         modal.show();
+
+        modal.click(function(){
+            this.hide();
+        })
     })
 });
 
@@ -145,7 +149,7 @@ document.addEventListener("show", function (event) {
         ;
     } else if (event.target.id == "camera") {
 
-        /*   INSERT ANIMATION JS TRI */
+        startWin();
 
         if (typeof cordova !== 'undefined') {
             cordova.plugins.barcodeScanner.scan(
