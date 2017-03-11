@@ -9,14 +9,16 @@ document.addEventListener('init', function (event) {
         myApp.controllers[page.id](page);
     }
 
-    $("#secret").click(function(){
+
+    $("#secret").click(function () {
         var modal = $('#modal');
         modal.show();
 
-        modal.click(function(){
+        modal.click(function () {
             this.hide();
         })
-    })
+    });
+
 });
 
 
@@ -25,16 +27,16 @@ var firstProfile = false;
 document.addEventListener("show", function (event) {
     if (event.target.id == "deals" && !firstMap) {
         firstMap = true;
-        var mymap = L.map('mapid').setView([47.3721001,8.5382902], 16);
+        var mymap = L.map('mapid').setView([47.3721001, 8.5382902], 16);
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
             id: 'mapbox.streets'
         }).addTo(mymap);
 
-        L.marker([47.3721001,8.5382902]).addTo(mymap);
+        L.marker([47.3721001, 8.5382902]).addTo(mymap);
 
-        var polygon = L.circle([47.3721001,8.5382902], {
+        var polygon = L.circle([47.3721001, 8.5382902], {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.3,
@@ -51,10 +53,10 @@ document.addEventListener("show", function (event) {
         });
         var shop = new LeafIcon({iconUrl: 'icons/shop.png'});
 
-        L.marker([47.3721001,8.5382902], {icon: shop}).addTo(mymap).bindPopup("Prada");
-        L.marker([47.3731418,8.5395735], {icon: shop}).addTo(mymap).bindPopup("Lacoste");
-        L.marker([47.3729072,8.5384889], {icon: shop}).addTo(mymap).bindPopup("Micheal Kors");
-        L.marker([47.3724014,8.5388109], {icon: shop}).addTo(mymap).bindPopup("Vero Moda");
+        L.marker([47.3721001, 8.5382902], {icon: shop}).addTo(mymap).bindPopup("Prada");
+        L.marker([47.3731418, 8.5395735], {icon: shop}).addTo(mymap).bindPopup("Lacoste");
+        L.marker([47.3729072, 8.5384889], {icon: shop}).addTo(mymap).bindPopup("Micheal Kors");
+        L.marker([47.3724014, 8.5388109], {icon: shop}).addTo(mymap).bindPopup("Vero Moda");
 
     } else if (event.target.id == "profile" && !firstProfile) {
         firstProfile = true;
