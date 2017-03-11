@@ -9,6 +9,10 @@ document.addEventListener('init', function (event) {
         myApp.controllers[page.id](page);
     }
 
+    $("#secret").click(function(){
+        var modal = document.getElementById('modal');
+        modal.show();
+    })
 });
 
 
