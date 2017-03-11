@@ -233,3 +233,12 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     top:0px;
     height: 70%;
 }
+#rewardSecret{
+    font-size: 28px;
+    font-weight: bold;
+    color: #a4fdff;
+}
+
+.modal__content {
+    background-color: #393d48;
+}
