@@ -12,7 +12,7 @@ var d = [
         {axis:"Casual Clothing",value:0.59},
         {axis:"Sport Clothing",value:0.56},
         {axis:"Business Clothing",value:0.42},
-        {axis:"Electronics",value:0.34},
+        {axis:"Electronics",value:0.15},
         {axis:"Groceries",value:0.48},
         {axis:"Coffee, Bakery",value:0.14}
     ]
