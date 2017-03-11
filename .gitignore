@@ -1,8 +1,10 @@
 # Android
+platforms/
 platforms/android/assets/www
 platforms/android/bin/
 platforms/android/gen/
 platforms/android/res/xml/config.xml
+plugins/
 
 # iOS
 platforms/ios/build/
