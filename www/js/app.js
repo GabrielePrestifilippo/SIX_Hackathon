@@ -12,7 +12,7 @@ document.addEventListener('init', function (event) {
 
 
     $("#share").click(function () {
-        window.plugins.socialsharing.share('Message only')
+        window.plugins.socialsharing.share('yoooo')
     });
 
     $("#secret").click(function () {

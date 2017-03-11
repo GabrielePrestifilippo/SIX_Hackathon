@@ -230,7 +230,7 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
 #win {
     position: absolute;
     width: 100%;
-    top: 0px;
+    top: 40px;
     height: 70%;
 }
 

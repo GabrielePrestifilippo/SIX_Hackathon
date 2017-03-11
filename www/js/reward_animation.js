@@ -2,8 +2,8 @@ function startWin() {
     'use strict';
     $("#win").show();
     var initialTime = 0;
-    var score = 0;
-    var reward_amount = 100;
+    var score = 16;
+    var reward_amount = 70;
     // create a Scene
     var winDiv = document.getElementById("win");
     var scn = new DivSugar.Scene().setSize(800, 600).setImage('images/win.jpg').appendTo(winDiv);
@@ -67,10 +67,10 @@ function startWin() {
             text_node.div.innerHTML = score;
             text_node.div.innerHTML = '<h1 style="text-align: center;color: #43a1ea;font-weight: bold;font-size: 170px;margin-top: -40px;">' + score + '</h1>';
         }
-        if (initialTime > 200) {
+        if (initialTime > 80) {
             this.destroy();
             $("#win").html("");
-            $("#win").hide();
+            $("#win").fadeOut();;
         }
 
 
