@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="leaflet.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/spiderChart.js"></script>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/profile.css"/>
     <style>
         @import url('RobotoCondensed-Regular.ttf');
         @import url('RobotoCondensed-Bold.ttf');
@@ -56,17 +60,21 @@
         </ons-toolbar>
 
         <ons-tabbar id="myTabbar">
-            <ons-tab page="html/reward.html" active="true" active>
+            <ons-tab page="html/deals.html" active="true" active>
+            <ons-icon size=" 30px" icon="ion-ios-pricetags"></ons-icon>
+        </ons-tab>
+
+            <ons-tab page="html/reward.html" active="true" >
                 <ons-icon size=" 30px" icon="ion-social-usd"></ons-icon>
             </ons-tab>
 
-            <ons-tab page="html/camera.html">
-                <ons-icon size=" 34px" style="padding-top:10px;" icon="fa-camera"></ons-icon>
-            </ons-tab>
 
             <ons-tab page="html/profile.html" label="Pending">
                 <ons-icon size=" 30px" icon="ion-person"></ons-icon>
+            </ons-tab>
 
+            <ons-tab page="html/camera.html">
+                <ons-icon size=" 28px" style="padding-top:10px;" icon="fa-camera"></ons-icon>
             </ons-tab>
         </ons-tabbar>
 

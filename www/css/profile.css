@@ -1,13 +1,5 @@
-body {
-    margin: 0;
-    font-size: 14px;
-    height: 100%;
-    padding: 0;
-    font-family: "Helvetica Neue", Helvetica;
-}
 
-
-div { width: 50%; height: 50%; display: inline-block;  }
+.spider { width: 50%; height: 50%; display: inline-block;  }
 
 
 h3 {

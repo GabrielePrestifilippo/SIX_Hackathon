@@ -1,7 +1,7 @@
 /*****************
  *** Custom CSS ***
  *****************/
-body{
+body {
     font-family: 'Roboto Condensed', sans-serif !important;
 }
 
@@ -192,7 +192,7 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     height: 99%;
     line-height: 55px;
     border-bottom: 2px solid #9c9c9a;
-    background-color:rgb(214, 237, 255);
+    background-color: rgb(214, 237, 255);
 }
 
 .leftReward {
@@ -203,6 +203,7 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     font-size: 18px;
     line-height: 35px;
 }
+
 .rightReward {
     float: left;
     text-align: center;
@@ -212,10 +213,14 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     height: 100%;
 }
 
-.topDeal{height:75%;font-size: 18px;}
+.topDeal {
+    height: 75%;
+    font-size: 18px;
+}
 
-.bottomDeal{height: 25%;
-font-size: 11px;
-line-height: 10px;
-    color: #1ed059;
+.bottomDeal {
+    height: 25%;
+    font-size: 11px;
+    line-height: 10px;
+    color: #54c73c;
 }
