@@ -143,7 +143,7 @@ document.addEventListener("show", function (event) {
 
         /*   INSERT ANIMATION JS TRI */
 
-        if (cordova) {
+        if (typeof cordova !== 'undefined') {
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
 
