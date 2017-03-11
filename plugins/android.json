@@ -7,16 +7,19 @@
         "files": {}
     },
     "installed_plugins": {
-        "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
         "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "six.hackathon.myshop"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "six.hackathon.myshop"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "six.hackathon.myshop"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "six.hackathon.myshop"
         }
     }
 }
