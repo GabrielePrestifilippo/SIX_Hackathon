@@ -216,6 +216,8 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
 .topDeal {
     height: 75%;
     font-size: 18px;
+    padding-right: 10px;
+    color: #3c3c3c;
 }
 
 .bottomDeal {

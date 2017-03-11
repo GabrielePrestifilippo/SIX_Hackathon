@@ -17,7 +17,7 @@ var firstProfile = false;
 document.addEventListener("show", function (event) {
     if (event.target.id == "deals" && !firstMap) {
         firstMap = true;
-        var mymap = L.map('mapid').setView([47.3721001,8.5382902], 15);
+        var mymap = L.map('mapid').setView([47.3721001,8.5382902], 16);
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
@@ -30,7 +30,7 @@ document.addEventListener("show", function (event) {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.3,
-            radius: 500,
+            radius: 180,
         }).addTo(mymap);
 
         polygon.setStyle({weight: 1});
@@ -43,8 +43,8 @@ document.addEventListener("show", function (event) {
         });
         var shop = new LeafIcon({iconUrl: 'icons/shop.png'});
 
-        L.marker([7.3721001,8.5382902], {icon: shop}).addTo(mymap).bindPopup("Prada");
-        L.marker([47.3731372,8.5393335], {icon: shop}).addTo(mymap).bindPopup("Schulthesse");
+        L.marker([47.3721001,8.5382902], {icon: shop}).addTo(mymap).bindPopup("Prada");
+        L.marker([47.3731418,8.5395735], {icon: shop}).addTo(mymap).bindPopup("Lacoste");
         L.marker([47.3729072,8.5384889], {icon: shop}).addTo(mymap).bindPopup("Micheal Kors");
         L.marker([47.3724014,8.5388109], {icon: shop}).addTo(mymap).bindPopup("Vero Moda");
 
@@ -142,7 +142,7 @@ document.addEventListener("show", function (event) {
     } else if (event.target.id == "camera") {
 
         /*   INSERT ANIMATION JS TRI */
-        
+
         if (cordova) {
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
