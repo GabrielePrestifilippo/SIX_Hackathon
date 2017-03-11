@@ -1,5 +1,5 @@
 
-.spider { width: 50%; height: 50%; display: inline-block;  }
+.spider {  margin-left:10%; display: inline-block;  }
 
 
 h3 {
@@ -10,7 +10,6 @@ h3 {
     font-style:normal;
     font-family: "Roboto", helvetica, arial, sans-serif;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-    text-transform:uppercase;
 }
 
 /*** Table Styles **/
@@ -90,7 +89,7 @@ tr:last-child td:last-child {
 
 td {
     background: #444444;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: left;
     vertical-align: middle;
     font-weight: 300;
