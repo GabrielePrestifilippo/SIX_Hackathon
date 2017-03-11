@@ -3,7 +3,7 @@ h3 {
     color: #000000;
     font-size: 20px;
     font-weight: bold;
-    font-style:normal;
+    font-style: normal;
     font-family: "Roboto", helvetica, arial, sans-serif;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -13,16 +13,16 @@ h3 {
 }
 
 .meter {
-    height: 20px;  /* Can be anything */
+    height: 20px; /* Can be anything */
     display: inline-block;
-    width:30%;
+    width: 30%;
     position: relative;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
     padding: 10px;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .meter > span {
@@ -38,18 +38,38 @@ h3 {
             #669fe1 37%,
             #669fe1 69%
     );
-    box-shadow:
-            inset 0 2px 9px  rgba(255,255,255,0.3),
-            inset 0 -2px 6px rgba(0,0,0,0.4);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
     position: relative;
     overflow: hidden;
 }
 
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #669fe1;
+    background-image: linear-gradient(
+            center bottom,
+            #669fe1 37%,
+            #669fe1 69%
+    );
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
 
 .meter > span:after {
     content: "";
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     background-image: linear-gradient(
             -45deg,
             rgba(255, 255, 255, .2) 25%,
@@ -69,3 +89,38 @@ h3 {
     border-bottom-left-radius: 20px;
     overflow: hidden;
 }
+
+.circle {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 25%;
+    height: 50%;
+    text-align: center;
+    width: 50%;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: #bfd5ec
+
+}
+
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+
+.circle:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
