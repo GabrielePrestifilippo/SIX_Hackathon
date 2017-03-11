@@ -6,10 +6,6 @@ body {
     font-family: "Helvetica Neue", Helvetica;
 }
 
-
-div { width: 50%; height: 50%; display: inline-block;  }
-
-
 h3 {
     text-align: center;
     color: #000000;
@@ -19,6 +15,16 @@ h3 {
     font-family: "Roboto", helvetica, arial, sans-serif;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
     text-transform:uppercase;
+}
+
+
+#content {
+    display: inline-block;
+}
+
+
+#wrapper {
+    text-align: center;
 }
 
 /*** Table Styles **/
@@ -32,6 +38,8 @@ h3 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     animation: float 5s infinite;
 }
+
+
 
 th {
     color: #000000;;
