@@ -13,15 +13,14 @@ h3 {
 }
 
 .meter {
-    height: 20px; /* Can be anything */
+    height: 15px;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     position: relative;
     background: #555;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 20px;
     box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
 
@@ -126,7 +125,9 @@ h3 {
 
 .containerBox {
     position: relative;
+    width: 40%;
     display: inline-block;
+    margin: 20px;
 }
 
 .circle:before {
@@ -204,4 +205,9 @@ img {
     0% { width: 0; }
 }
 
-
+.page--material__content h1, .page--material__content h2, .page--material__content h3, .page--material__content h4, .page--material__content h5 {
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    margin: 10px;
+}

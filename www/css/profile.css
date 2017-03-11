@@ -18,7 +18,8 @@ h3 {
     background: #669fe1;
     border-radius: 3px;
     border-collapse: collapse;
-    margin: auto;
+    margin: 0;
+    width: 100%;
     padding: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     animation: float 5s infinite;
