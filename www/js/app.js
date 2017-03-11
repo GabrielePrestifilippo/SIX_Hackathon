@@ -142,11 +142,11 @@ document.addEventListener("show", function (event) {
     } else if (event.target.id == "camera") {
 
         /*   INSERT ANIMATION JS TRI */
+        
         if (cordova) {
             cordova.plugins.barcodeScanner.scan(
                 function (result) {
-                    $("#coins").show();
-                    startCoins();
+
                     /*
                      alert("We got a barcode\n" +
                      "Result: " + result.text + "\n" +
