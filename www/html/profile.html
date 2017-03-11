@@ -1,32 +1,37 @@
 <ons-page id="profile">
 
-	<div id="container">
-		<ons-list-header>Shopping habits</ons-list-header>
-		<div class="spider animated zoomIn" id="chart"></div>
+    <div id="container">
+        <ons-list-header>Shopping habits</ons-list-header>
+        <div class="spider animated zoomIn" id="chart"></div>
 
-		<div>
-			<ons-list-header>Favourite Brands</ons-list-header>
-			<table class="table-fill">
-				<tr>
+        <ons-list>
+            <ons-list-header>Favourite Brands</ons-list-header>
+            <ons-list-item modifier="longdivider">
+                <div class="brandItem" style="background-color: #f1f9ff">
+                    <div class="indicator"><i class="fa fa-arrow-up" aria-hidden="true" style="color:green"></i></div>
+                    <div class="brand">Marco Polo</div>
+                </div>
+            </ons-list-item>
+            <ons-list-item modifier="longdivider">
+                <div class="brandItem" >
+                    <div class="indicator"><i class="fa fa-arrow-up" aria-hidden="true" style="color:green"></i></div>
+                    <div class="brand">Nike</div>
+                </div>
+            </ons-list-item>
+            <ons-list-item modifier="longdivider">
+                <div class="brandItem"  style="background-color: #f1f9ff">
+                    <div class="indicator"><i class="fa fa-arrow-down" aria-hidden="true" style="color:orange"></i></div>
+                    <div class="brand">Samsung</div>
+                </div>
+            </ons-list-item>
+            <ons-list-item modifier="longdivider">
+                <div class="brandItem" >
+                    <div class="indicator"><i class="fa fa-arrow-up" aria-hidden="true" style="color:green"></i></div>
+                    <div class="brand">Migros</div>
+                </div>
+            </ons-list-item>
 
-					<td class="ranking"><i class="fa fa-arrow-up" aria-hidden="true"></i></td>
-					<td class="text-left">Marco Polo</td>
-				</tr>
-				<tr>
-					<td class="ranking"><i class="fa fa-arrow-up" aria-hidden="true"></td>
-					<td class="text-left">Nike</td>
-				</tr>
-				<tr>
-					<td class="ranking"><i class="fa fa-arrow-down" aria-hidden="true"></td>
-					<td class="text-left">Samsung</td>
-				</tr>
-				<tr>
-					<td class="ranking"><i class="fa fa-arrow-up" aria-hidden="true"></td>
-					<td class="text-left">Migros</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+        </ons-list>
+    </div>
 
 </ons-page>
