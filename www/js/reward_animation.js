@@ -3,7 +3,7 @@ function startCoins() {
     winDiv.setVisible = true;
     // create a Scene
 
-    var scn = new DivSugar.Scene().setSize(1200, 800).setImage('images/win.jpg').appendTo(winDiv);
+    var scn = new DivSugar.Scene().setSize(1200, 700).setImage('images/win.jpg').appendTo(winDiv);
 
     // maximize the Scene size
     function resize() {
