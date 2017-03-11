@@ -2,7 +2,7 @@ window.onload = function() {
   'use strict';
 
   var score = 0;
-
+  var reward_amount = 100;
   // create a Scene
   var scn = new DivSugar.Scene().setSize(800, 600).setImage('../images/win.jpg').appendTo(document.body);
 
@@ -56,10 +56,10 @@ window.onload = function() {
   task.onUpdate = function() { 
     if (this.deltaTime > 15)
     {
-      if (score < 100)
+      if (score < reward_amount)
         score++;
       else
-        score = 100;
+        score = reward_amount;
       text_node.div.innerHTML = score;
       text_node.div.innerHTML = '<h1 style="text-align:center; color:orange; text-shadow:1px 1px black">'+score+'</h1>';
 
