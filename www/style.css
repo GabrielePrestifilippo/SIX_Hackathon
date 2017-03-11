@@ -312,3 +312,6 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     box-sizing: border-box;
     border-bottom:1px solid #59a5e0;
 }
+#outfit{
+    display: none;
+}
