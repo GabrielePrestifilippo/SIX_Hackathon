@@ -140,31 +140,38 @@ document.addEventListener("show", function (event) {
             })
         ;
     } else if (event.target.id == "camera") {
+        startCoins();//temp
+        setTimeout(function () {
+            $("#win").hide();
+        }, 6000);
 
-        cordova.plugins.barcodeScanner.scan(
-            function (result) {
-                $("#coins").show();
-                /*
-                alert("We got a barcode\n" +
-                    "Result: " + result.text + "\n" +
-                    "Format: " + result.format + "\n" +
-                    "Cancelled: " + result.cancelled);
-                    */
-            },
-            function (error) {
-                alert("Code is not valid! Try again");
-            },
-            {
-                preferFrontCamera: false, // iOS and Android
-                showFlipCameraButton: true, // iOS and Android
-                showTorchButton: true, // iOS and Android
-                torchOn: false, // Android, launch with the torch switched on (if available)
-                prompt: "Place a barcode inside the scan area", // Android
-                resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-                formats: "QR_CODE,PDF_417", // default: all but PDF_417 and RSS_EXPANDED
-                orientation: "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
-                disableAnimations: true // iOS
-            }
-        );
+        if (cordova) {
+            cordova.plugins.barcodeScanner.scan(
+                function (result) {
+                    $("#coins").show();
+                    startCoins();
+                    /*
+                     alert("We got a barcode\n" +
+                     "Result: " + result.text + "\n" +
+                     "Format: " + result.format + "\n" +
+                     "Cancelled: " + result.cancelled);
+                     */
+                },
+                function (error) {
+                    alert("Code is not valid! Try again");
+                },
+                {
+                    preferFrontCamera: false, // iOS and Android
+                    showFlipCameraButton: true, // iOS and Android
+                    showTorchButton: true, // iOS and Android
+                    torchOn: false, // Android, launch with the torch switched on (if available)
+                    prompt: "Place a barcode inside the scan area", // Android
+                    resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+                    formats: "QR_CODE,PDF_417", // default: all but PDF_417 and RSS_EXPANDED
+                    orientation: "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
+                    disableAnimations: true // iOS
+                }
+            );
+        }
     }
 }, false);

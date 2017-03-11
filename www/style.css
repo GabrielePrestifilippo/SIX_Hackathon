@@ -224,3 +224,10 @@ ons-list-item.list__item.list__item--material.list__item--longdivider {
     line-height: 10px;
     color: #54c73c;
 }
+
+#win{
+    position: absolute;
+    width:100%;
+    top:0px;
+    height: 70%;
+}
