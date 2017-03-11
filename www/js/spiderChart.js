@@ -2,8 +2,8 @@ var RadarChart = {
     draw: function(id, d, options){
         var cfg = {
             radius: 5,
-            w: 800,
-            h: 800,
+            w: 2800,
+            h: 2800,
             factor: 1,
             factorLegend: .85,
             levels: 3,
@@ -34,8 +34,8 @@ var RadarChart = {
 
         var g = d3.select(id)
             .append("svg")
-            .attr("width", '100%')
-            .attr("height", '30%')
+            .attr("width", cfg.w+cfg.ExtraWidthX)
+            .attr("height", cfg.h+cfg.ExtraWidthY)
             .append("g")
             .attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
         ;
